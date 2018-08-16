@@ -1,0 +1,8 @@
+prefix=/home/ananth/ros_book/install
+
+Name: fetch_navigation
+Description: Description of fetch_navigation
+Version: 0.7.14
+Cflags: 
+Libs: -L/home/ananth/ros_book/install/lib 
+Requires: 

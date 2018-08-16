@@ -1,0 +1,2 @@
+fetch_gazebo/fetch_gazebo:fetch_gazebo/fetch_gazebo_demo:fetch_ros/fetch_calibration:fetch_ros/fetch_depth_layer:fetch_ros/fetch_description:fetch_ros/fetch_ikfast_plugin:fetch_ros/fetch_maps:fetch_ros/fetch_moveit_config:fetch_ros/fetch_navigation:fetch_ros/fetch_teleop:stockroom_ws
+-DCATKIN_DEVEL_PREFIX=/home/ananth/ros_book/devel -DCMAKE_INSTALL_PREFIX=/home/ananth/ros_book/install -G Unix Makefiles
