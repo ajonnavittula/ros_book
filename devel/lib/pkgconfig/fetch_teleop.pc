@@ -1,8 +1,0 @@
-prefix=/home/ananth/ros_book/devel
-
-Name: fetch_teleop
-Description: Description of fetch_teleop
-Version: 0.7.14
-Cflags: 
-Libs: -L/home/ananth/ros_book/devel/lib 
-Requires: 

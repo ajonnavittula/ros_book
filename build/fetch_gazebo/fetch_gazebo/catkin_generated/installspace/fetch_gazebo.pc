@@ -1,8 +1,0 @@
-prefix=/home/ananth/ros_book/install
-
-Name: fetch_gazebo
-Description: Description of fetch_gazebo
-Version: 0.7.1
-Cflags: -I/home/ananth/ros_book/install/include
-Libs: -L/home/ananth/ros_book/install/lib -lfetch_gazebo_plugin
-Requires: control_toolbox gazebo_ros robot_controllers robot_controllers_interface
