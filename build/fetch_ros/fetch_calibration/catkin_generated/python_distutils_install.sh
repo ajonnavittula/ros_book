@@ -17,15 +17,15 @@ echo_and_run() { echo "+ $@" ; "$@" ; }
 echo_and_run cd "/home/ananth/ros_book/src/fetch_ros/fetch_calibration"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/ananth/ros_book/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/ananth/ros_book/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/ananth/ros_book/install/lib/python2.7/dist-packages:/home/ananth/ros_book/build/lib/python2.7/dist-packages:$PYTHONPATH" \
+    PYTHONPATH="/home/ananth/ros_book/install/lib/python3/dist-packages:/home/ananth/ros_book/build/lib/python3/dist-packages:$PYTHONPATH" \
     CATKIN_BINARY_DIR="/home/ananth/ros_book/build" \
-    "/home/ananth/anaconda2/bin/python" \
+    "/home/ananth/miniconda3/bin/python" \
     "/home/ananth/ros_book/src/fetch_ros/fetch_calibration/setup.py" \
     build --build-base "/home/ananth/ros_book/build/fetch_ros/fetch_calibration" \
     install \

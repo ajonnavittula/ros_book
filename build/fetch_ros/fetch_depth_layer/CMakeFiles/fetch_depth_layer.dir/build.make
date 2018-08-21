@@ -232,7 +232,7 @@ fetch_depth_layer_EXTERNAL_OBJECTS =
 /home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /usr/lib/x86_64-linux-gnu/libvtkIOExodus-6.2.so.6.2.0
 /home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-6.2.so.6.2.0
 /home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /usr/lib/x86_64-linux-gnu/libvtkIOSQL-6.2.so.6.2.0
-/home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /home/ananth/anaconda2/lib/libsqlite3.so
+/home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /home/ananth/miniconda3/lib/libsqlite3.so
 /home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.2.so.6.2.0
 /home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelFlowPaths-6.2.so.6.2.0
 /home/ananth/ros_book/devel/lib/libfetch_depth_layer.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelStatistics-6.2.so.6.2.0

@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "fetch_gazebo_demo")
-set(fetch_gazebo_demo_VERSION "0.7.1")
+set(fetch_gazebo_demo_VERSION "0.8.0")
 set(fetch_gazebo_demo_MAINTAINER "Michael Ferguson <mferguson@fetchrobotics.com>")
 set(fetch_gazebo_demo_PACKAGE_FORMAT "1")
 set(fetch_gazebo_demo_BUILD_DEPENDS )

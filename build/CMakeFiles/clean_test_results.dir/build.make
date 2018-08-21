@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ananth/ros_book/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/home/ananth/anaconda2/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/ananth/ros_book/build/test_results
+	/home/ananth/miniconda3/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/ananth/ros_book/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

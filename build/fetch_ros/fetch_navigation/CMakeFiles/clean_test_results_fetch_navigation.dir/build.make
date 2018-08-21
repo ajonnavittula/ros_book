@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ananth/ros_book/build
 include fetch_ros/fetch_navigation/CMakeFiles/clean_test_results_fetch_navigation.dir/progress.make
 
 fetch_ros/fetch_navigation/CMakeFiles/clean_test_results_fetch_navigation:
-	cd /home/ananth/ros_book/build/fetch_ros/fetch_navigation && /home/ananth/anaconda2/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/ananth/ros_book/build/test_results/fetch_navigation
+	cd /home/ananth/ros_book/build/fetch_ros/fetch_navigation && /home/ananth/miniconda3/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/ananth/ros_book/build/test_results/fetch_navigation
 
 clean_test_results_fetch_navigation: fetch_ros/fetch_navigation/CMakeFiles/clean_test_results_fetch_navigation
 clean_test_results_fetch_navigation: fetch_ros/fetch_navigation/CMakeFiles/clean_test_results_fetch_navigation.dir/build.make

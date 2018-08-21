@@ -2,7 +2,7 @@ prefix=/home/ananth/ros_book/install
 
 Name: fetch_gazebo_demo
 Description: Description of fetch_gazebo_demo
-Version: 0.7.1
+Version: 0.8.0
 Cflags: 
 Libs: -L/home/ananth/ros_book/install/lib 
 Requires: 

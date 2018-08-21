@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "control_toolbox;gazebo_ros;robot_controllers;robot_con
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lfetch_gazebo_plugin".split(';') if "-lfetch_gazebo_plugin" != "" else []
 PROJECT_NAME = "fetch_gazebo"
 PROJECT_SPACE_DIR = "/home/ananth/ros_book/install"
-PROJECT_VERSION = "0.7.1"
+PROJECT_VERSION = "0.8.0"
