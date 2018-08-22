@@ -6,7 +6,7 @@ from tf.transformations import quaternion_from_euler
 from std_srvs.srv import Empty
 #from look_at_bin import look_at_bin
 
-if __name__ == 'main':
+if __name__ == '__main__':
 	rospy.init_node('go_to_bin')
 	rospy.wait_for_service("/move_base/clear_costmaps")
 	rospy.ServiceProxy("/move_base/clear_costmaps", Empty)()
