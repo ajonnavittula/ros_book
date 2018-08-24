@@ -1,4 +1,4 @@
-#! usr/bin/env python
+#! /usr/bin/env python
 import sys, rospy, actionlib
 from control_msgs.msg import PointHeadAction, PointHeadGoal
 
