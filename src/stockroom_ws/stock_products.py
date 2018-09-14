@@ -3,7 +3,7 @@ import rospy, tf
 from gazebo_msgs.srv import *
 from geometry_msgs.msg import *
 
-if __name__ == 'main':
+if __name__ == '__main__':
 	rospy.init_node("stock_products")
 	rospy.wait_for_service("gazebo/delete_model")
 	rospy.wait_for_service("gazebo/spawn_sdf_model")
@@ -11,7 +11,7 @@ if __name__ == 'main':
 	s = rospy.ServiceProxy("gazebo/spawn_sdf_model", SpawnModel)
 	orient = Quaternion(*tf.transformations.quaternion_from_euler(0,0,0))
 	with open("models/product_0/model.sdf", "r") as f:
-		prduct_xml = f.read()
+		product_xml = f.read()
 	for product_num in xrange(0,12):
 		item_name = "product_{0}_0".format(product_num)
 		delete_model(item_name)

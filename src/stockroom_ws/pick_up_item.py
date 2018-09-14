@@ -25,7 +25,7 @@ if __name__ == '__main__':
 		GripperCommandAction)
 	gripper.wait_for_server()
 
-	arm = moveit_commander.MoveGroupCommander("arm")
+	arm = moveit_commander.MoveGroupCommander("arm_with_torso")
 	arm.allow_replanning(True)
 	tf_listener = tf.TransformListener()
 	rate = rospy.Rate(10)
@@ -33,12 +33,12 @@ if __name__ == '__main__':
 	gripper_goal = GripperCommandGoal()
 	gripper_goal.command.max_effort = 10.0
 
-	#scene = PlanningSceneInterface("base_link")
+	scene = PlanningSceneInterface("base_link")
 
 	p = Pose()
-	p.position.x = 0.4# + 0.15
+	p.position.x = 0.4 + 0.15
 	p.position.y = -0.4
-	p.position.z = 0.7 #+ 0.15
+	p.position.z = 0.7 + 0.15 + 0.40
 	p.orientation = Quaternion(*quaternion_from_euler(0,1,1))
 	arm.set_pose_target(p)
 	arm.go(True)
@@ -70,13 +70,13 @@ if __name__ == '__main__':
 		gripper.wait_for_result(rospy.Duration(1.0))
 
 		print("item:" + str(item_translation))
-		#scene.addCube(
-		#	"item", 0.05,
-		#	item_translation[0], item_translation[1], item_translation[2])
+		scene.addCube(
+			"item", 0.05,
+			item_translation[0], item_translation[1], item_translation[2])
 
-		p.position.x = item_translation[0] - 0.01# - 0.06
+		p.position.x = item_translation[0] - 0.01 - 0.06
 		p.position.y = item_translation[1]
-		p.position.z = item_translation[2] + 0.04 #+ 0.14
+		p.position.z = item_translation[2] + 0.04 + 0.14
 		p.orientation = Quaternion(*quaternion_from_euler(0, 1.2, 0))
 		arm.set_pose_target(p)
 		arm.go(True)
