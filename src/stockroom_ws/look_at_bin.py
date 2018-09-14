@@ -3,7 +3,7 @@ import sys, rospy, actionlib
 from control_msgs.msg import PointHeadAction, PointHeadGoal
 
 def look_at_bin():
-	head_client = actionlib.SimpleActionCleint("head_controller/point_head", PointHeadAction)
+	head_client = actionlib.SimpleActionClient("head_controller/point_head", PointHeadAction)
 	head_client.wait_for_server()
 	goal = PointHeadGoal()
 	goal.target.header.stamp = rospy.Time.now()
@@ -13,7 +13,7 @@ def look_at_bin():
 	goal.target.point.z = 0.4
 	goal.min_duration = rospy.Duration(1.0)
 	head_client.send_goal(goal)
-	head_cleint.wait_for_result()
+	head_client.wait_for_result()
 
 if '__name__' == '__main__':
 	rospy.init_node('look_at_bin')
